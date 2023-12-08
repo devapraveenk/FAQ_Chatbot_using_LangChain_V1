@@ -39,3 +39,11 @@ streamlit run app.py
 
 ## Example ScreenShot
 <img width="1470" alt="Screenshot 2023-12-09 at 1 19 28 AM" src="https://github.com/devapraveenk/FAQ_Chatbot_using_LangChain_V1/assets/115524697/f499c8f5-9a0d-4b3d-8165-37e6d4da48e7">
+
+
+## Note❗️❗️❗️
+Make sure the CSV file have two columns only for better results 
+### Example
+<img width="1390" alt="Screenshot 2023-12-09 at 1 32 58 AM" src="https://github.com/devapraveenk/FAQ_Chatbot_using_LangChain_V1/assets/115524697/d4ae4ffc-0818-4263-a8cc-a502d102c859">
+
+
