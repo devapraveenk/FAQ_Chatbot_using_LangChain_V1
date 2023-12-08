@@ -1,0 +1,6 @@
+os
+faiss-cpu==1.7.4
+langchain==0.0.344
+streamlit==1.29.0
+sentence_transformers==2.2.2
+python-dotenv==1.0.0
