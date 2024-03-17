@@ -1,8 +1,8 @@
 # FAQ-ChatBOT
 
-[![LinkedIn Connect](https://img.shields.io/badge/LinkedIn-blue)](www.linkedin.com/in/devapraveenk)
+[![LinkedIn Connect](https://img.shields.io/badge/LinkedIn-blue)](www.linkedin.com/in/deva-praveen-k13)
 
-## An AI-FAQ chatbot with your CSV files by using Google Gemini Pro API , HuggingFace Embeddings , Langchain and Streamlit Web-application
+## An AI-FAQ chatbot with your CSV files by using Google PaLM API , HuggingFace Embeddings , Langchain and Streamlit Web-application
 
 ## Running Locally 💻
 

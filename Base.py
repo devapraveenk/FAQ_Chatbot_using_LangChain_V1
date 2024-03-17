@@ -1,8 +1,5 @@
-# from langchain.llms import GooglePalm
 from langchain_google_genai import ChatGoogleGenerativeAI
-# from langchain.embeddings import HuggingFaceEmbeddings
 from langchain_community.embeddings import HuggingFaceEmbeddings
-# from langchain.vectorstores import FAISS
 from langchain_community.vectorstores import FAISS
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
@@ -19,12 +16,10 @@ def creation_of_vectorDB_in_local(loader):
     db.save_local(db_file_path)
 
 def creation_FAQ_chain():
-    # db= FAISS.load_local(db_file_path, embeddings)
     db=FAISS.load_local(db_file_path, embeddings, allow_dangerous_deserialization=True)
     retriever =db.as_retriever(score_threshold=0.7)
     
-    llm = ChatGoogleGenerativeAI(model="gemini-pro",temperature=0.0)
-    # llm=GooglePalm(google_api_key=os.environ['GOOGLE_API_KEY'],temperature=0.0)
+    llm = ChatGoogleGenerativeAI(model="gemini-pro",temperature=0.2)
     
     prompt_temp="""Given the following context and a question, generate an answer based on this context only.
     In the answer try to provide as much text as possible from "response" section in the source document context without making much changes.
