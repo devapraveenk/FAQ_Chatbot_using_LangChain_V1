@@ -1,4 +1,5 @@
-from langchain.document_loaders import CSVLoader
+# from langchain.document_loaders import CSVLoader
+from langchain_community.document_loaders import CSVLoader
 import tempfile
 import streamlit as st
 from Base import creation_FAQ_chain,creation_of_vectorDB_in_local
