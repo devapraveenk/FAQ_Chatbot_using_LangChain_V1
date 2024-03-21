@@ -16,7 +16,7 @@ def creation_of_vectorDB_in_local(loader):
     db.save_local(db_file_path)
 
 def creation_FAQ_chain():
-    db=FAISS.load_local(db_file_path, embeddings, allow_dangerous_deserialization=True)
+    db=FAISS.load_local(db_file_path, embeddings)
     retriever =db.as_retriever(score_threshold=0.7)
     
     llm = ChatGoogleGenerativeAI(model="gemini-pro",temperature=0.2)
